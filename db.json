@@ -1,0 +1,11 @@
+{
+    "produtos" : [
+        { "titulo": "Produto",
+          "descricao": "Descrição do produto",
+          "preco": "19,99",
+          "quantidade": 15,
+          "imagem": "assets/img/camisa1.jpg"
+        }
+    ],
+    "usuarios": []
+}

@@ -1,0 +1,15 @@
+{
+  "name": "ecommercebrazz",
+  "version": "1.0.0",
+  "description": "Projeto E-commerce",
+  "license": "ISC",
+  "author": "Danil Leo",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "json-server": "json-server --watch db.json --port 3000"
+  },
+  "devDependencies": {
+    "json-server": "^1.0.0-beta.5"
+  }
+}
