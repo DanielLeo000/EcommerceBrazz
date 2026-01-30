@@ -1,13 +1,22 @@
 {
   "name": "ecommercebrazz",
   "version": "1.0.0",
-  "description": "Projeto E-commerce",
+  "description": "",
+  "homepage": "https://github.com/DanielLeo000/EcommerceBrazz#readme",
+  "bugs": {
+    "url": "https://github.com/DanielLeo000/EcommerceBrazz/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DanielLeo000/EcommerceBrazz.git"
+  },
   "license": "ISC",
-  "author": "Danil Leo",
+  "author": "",
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
-    "json-server": "json-server --watch db.json --port 3000"
+    "start": "json-server --watch db.json --port 3000",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
     "json-server": "^1.0.0-beta.5"

@@ -22,35 +22,57 @@
     </header>
     <main class="adm">
         <section class="CadastroDeprodutos">
-            <div class="formulario">
+            <div class="container">
                 <h2>Cadastro de produtos</h2>
                 <form id="cadProdutos">
                     <label for="titulo">Titulo: </label>
-                    <input type="text" id="titulo"></input>
+                    <input type="text" id="titulo">
                     <label for="descricao">Descrição do Produto: </label>
-                    <input type="text" id="descricao"></input>
+                    <input type="text" id="descricao">
                     <label for="detalhes">Detalhes do Produto: </label>
-                    <input type="text" id="detalhes"></input>
+                    <input type="text" id="detalhes">
                     <label for="preco">Adicionar Valor do Produto: </label>
-                    <input type="number" id="preco"></input>
-                    <label for="quantidade">Adicionar quantidade de disponivel do produto: : </label>
-                    <input type="number" id="quantidade"></input>
+                    <input type="number" id="preco">
+                    <label for="quantidade">Adicionar quantidade de disponivel do produto: </label>
+                    <input type="number" id="quantidade">
                     <label for="imagem">Adicionar Imagem do Produto: </label>
-                    <input type="file" id="imagem"></input>
+                    <input type="file" id="imagem">
                     <button type="submit">Adicionar produto</button>
                 </form>
             </div>
-             <div class="formulario">
+            <div class="container">
                 <h2>Preview do produto</h2>
-
-
-             </div>
-        
+            </div>
+            <div class="container">
+                <h2>Listagem de produtos</h2>
+                <table class="produtos-table">
+                    <thead>
+                        <tr>
+                            <th>Título</th>
+                            <th>Preço</th>
+                            <th>Quantidade</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody id="produtos-list">
+                        <tr>
+                            <td data-label="Título">Produto </td>
+                            <td data-label="Preço">R$ 0,00</td>
+                            <td data-label="Quantidade">0</td>
+                            <td data-label="Ações">
+                                <button class="edit">Editar</button>
+                                <button class="delete">Excluir</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
     </main>
     <footer>
         <p>© 2024 Minha Loja. Todos os direitos reservados.</p>
     </footer>
-    <scrip src="JS/app.js">
+    <script src="JS/app.js"></script>
 </body>
 
 </html>
