@@ -1,23 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/CSS/style.css">
     <title>Document</title>
 </head>
+
 <body>
     <header>
-          <div class="logo">
+        <div class="logo">
             BRAZZ.
         </div>
-         <nav class="nav-links">
+        <nav class="nav-links">
             <ul>
-                <li>Detalhes do produto</li>
-                <li>Voltar</li>
+                <li><a href="config.html">Perfil</a></li>
+                <li><a href="index.html">Home</a></li>
             </ul>
         </nav>
     </header>
+    <main class="adm">
+        <section class="CadastroDeprodutos">
+            <div class="formulario">
+                <h2>Cadastro de produtos</h2>
+                <form id="cadProdutos">
+                    <label for="titulo">Titulo: </label>
+                    <input type="text" id="titulo"></input>
+                    <label for="descricao">Descrição do Produto: </label>
+                    <input type="text" id="descricao"></input>
+                    <label for="detalhes">Detalhes do Produto: </label>
+                    <input type="text" id="detalhes"></input>
+                    <label for="preco">Adicionar Valor do Produto: </label>
+                    <input type="number" id="preco"></input>
+                    <label for="quantidade">Adicionar quantidade de disponivel do produto: : </label>
+                    <input type="number" id="quantidade"></input>
+                    <label for="imagem">Adicionar Imagem do Produto: </label>
+                    <input type="file" id="imagem"></input>
+                    <button type="submit">Adicionar produto</button>
+                </form>
+            </div>
+             <div class="formulario">
+                <h2>Preview do produto</h2>
+
+
+             </div>
+        
+    </main>
+    <footer>
+        <p>© 2024 Minha Loja. Todos os direitos reservados.</p>
+    </footer>
     <scrip src="JS/app.js">
 </body>
+
 </html>
