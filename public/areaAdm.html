@@ -45,27 +45,23 @@
             </div>
             <div class="container">
                 <h2>Listagem de produtos</h2>
+               <div class="tabela">
                 <table class="produtos-table">
                     <thead>
                         <tr>
-                            <th>Título</th>
+                            <th>Produto</th>
                             <th>Preço</th>
                             <th>Quantidade</th>
-                            <th>Ações</th>
                         </tr>
                     </thead>
                     <tbody id="produtos-list">
-                        <tr>
-                            <td data-label="Título">Produto </td>
-                            <td data-label="Preço">R$ 0,00</td>
-                            <td data-label="Quantidade">0</td>
-                            <td data-label="Ações">
-                                <button class="edit">Editar</button>
-                                <button class="delete">Excluir</button>
-                            </td>
-                        </tr>
                     </tbody>
                 </table>
+                </div>
+                <div class="btn">
+                <button class="alterar">Alterar</button>
+                <button class="deletar">Excluir</button>
+                </div>
             </div>
         </section>
     </main>
@@ -73,6 +69,9 @@
         <p>© 2024 Minha Loja. Todos os direitos reservados.</p>
     </footer>
     <script src="JS/app.js"></script>
+    <script>
+       window.onload(listarProdutosTabela());   
+    </script>
 </body>
 
 </html>

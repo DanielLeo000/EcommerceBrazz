@@ -363,6 +363,12 @@ main>section:first-child>.lista_produtos .produto .informacoes p {
 .adm section > div:last-child {
    flex : 2 1 100%;
 }
+.tabela {
+   
+   height: 400px;
+   overflow: auto;
+
+}
 
 .adm section .container form {
     height: 100%;
@@ -416,23 +422,66 @@ select {
 
 .produtos-table {
   border-collapse: collapse; 
-  width: 100%;              
+  width: 100%; 
+  box-shadow: rgba(15, 15, 15, 0.329) 0px 0px 1px 1px;
+  
+           
 }
 
 
 .produtos-table  th,
 .produtos-tabletd {
-  border: 1px solid #ddd;  
-  padding: 8px;             
-  text-align: left;        
+    border: 1px solid #ddd;  
+    padding: 8px;             
+    text-align: left;        
 }
-
 
 .produtos-table th {
-  background-color: #f2f2f2; 
-  color: black;              
+    background-color: #f2f2f2; 
+    color: black;   
+    text-align: center;           
+}
+.produtos-table tbody tr:hover {
+    cursor: pointer;
+    background-color: #8a858557; 
 }
 
-.produtos-table tr:nth-child(even) {
-  background-color: #f9f9f9;
+.produtos-table  tr:nth-child(even) {
+    background-color: #f9f9f9;
+    border: 1px solid black;
 }
+.produtos-table td {
+    border: 1px solid #ddd;  
+    padding: 10px;
+
+}
+
+.container .btn {
+   display: inline;
+   margin: 0 auto;
+   
+}
+.container .btn button {
+   font-size : 16px;
+   width: 250px;
+   margin: 20px;
+   padding: 10px 16px;
+   border: 1px solid rgba(0, 0, 0, 0.425);
+   outline: none;
+}
+.container .btn button:hover { 
+    transform: scale(1.1);
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+.alterar { 
+   background-color: rgb(184, 157, 10);
+   color: rgba(255, 255, 255, 0.788);
+  
+}
+
+.deletar { 
+   background-color: rgb(148, 17, 17);
+   color: rgba(255, 255, 255, 0.788);
+}
+
