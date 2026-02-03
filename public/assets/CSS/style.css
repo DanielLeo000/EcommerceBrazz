@@ -1,4 +1,4 @@
-* {
+*:not(dialog) {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -48,20 +48,12 @@ header .logo {
     text-transform: uppercase;
     opacity: 0.6;
 }
-
-.menu-toggle {
-    display: none;
-    background: none;
-    border: none;
-    color: rgba(255, 255, 255, 0.911);
-    font-size: 28px;
-    cursor: pointer;
-    transition: 0.3s ease;
+footer{
+    text-align: center;
+    height : 50px;
+    padding : 20px;
 }
 
-.menu-toggle:hover {
-    color: #c9bc0cef;
-}
 
 .admBtn {
     width: 150px;
@@ -81,84 +73,34 @@ header .logo {
     background-color: rgba(146, 8, 8, 0.801);
     color: rgba(255, 255, 255, 0.822);
     border: 1px solid rgba(255, 255, 255, 0.822);
+}
 
 
 
-    @media (max-width: 600px) {
-        header {
-            flex-direction: column;
-            align-items: flex-start;
-            gap: 8px;
-            padding: 8px;
-        }
+@media (max-width: 650px) {
 
-        .menu-toggle {
-            display: block;
-        }
 
-        .nav-links {
-            display: none;
-        }
 
-        .search {
-            width: 100%;
-            display: flex;
-            gap: 8px;
-            align-items: center;
-        }
+    .search form {
+        width: 80%;
+        display: flex;
+        gap: 8px;
+        margin-top: 15px;
+       
+        
+    }
 
-        .search input {
-            flex: 1;
-            margin-left: 0;
-            width: auto;
-        }
+    .search input {
+        width: 100%;
+        margin-left: 0;
+    }
 
-        .search button {
-            margin-left: 0;
-        }
+    .adm section {
+        flex-direction: column;
+    }
 
-        .admBtn {
-            width: auto;
-            margin-left: 0;
-            font-size: 12px;
-        }
-
-        .categorias ul {
-            gap: 10px;
-            justify-content: center;
-            padding: 0 8px;
-        }
-
-        main>section:first-child>.lista_produtos {
-            max-width: 100%;
-            gap: 8px;
-            padding: 0 8px;
-        }
-
-        main>section:first-child>.lista_produtos .produto {
-            flex: 1 1 140px;
-           
-        }
-
-        main>section:first-child>.lista_produtos .produto img {
-            width: 100%;
-            min-width: 0;
-            height: auto;
-        }
-
-        .adm section {
-            flex-direction: column;
-        }
-
-        img,
-        video {
-            max-width: 100%;
-            height: auto;
-        }
-
-        body {
-            overflow-x: hidden;
-        }
+    .adm section .container {
+        width: 100%;
     }
 }
 
@@ -227,6 +169,7 @@ header li:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-top: 20px;
 }
 
 .categorias ul {
@@ -260,6 +203,8 @@ main>section:first-child>h2 {
     margin-bottom: 20px;
 }
 
+
+
 main>section:first-child>.lista_produtos {
     margin: 0 auto;
     max-width: 2040px;
@@ -267,28 +212,22 @@ main>section:first-child>.lista_produtos {
     flex-wrap: wrap;
     justify-content: center;
     gap: 10px;
+
 }
 
 main>section:first-child>.lista_produtos .produto {
     flex: 0 1 180px;
-    color: rgba(255, 255, 255, 0.7);
+   
     border-radius: 30px 30px 10px 10px;
-    box-shadow: rgba(0, 0, 0, 0.575) 2px 2px 6px;
+    box-shadow: #00000036  1px  2px 2px 2px;
     transition: 0.3s ease;
+    background-color: #dfe9de34;
 }
 
 main>section:first-child>.lista_produtos .produto:hover {
     transform: scale(1.06);
     transition: 0.3s;
     cursor: pointer;
-}
-
-main>section:first-child>.lista_produtos .produto:nth-child(2n + 1) {
-    background-color: #1b6113e7;
-}
-
-main>section:first-child>.lista_produtos .produto:nth-child(2n + 2) {
-    background-color: #c9bc0cef;
 }
 
 main>section:first-child>.lista_produtos .produto img {
@@ -313,6 +252,7 @@ main>section:first-child>.lista_produtos .produto .informacoes h3 {
 
 .preco {
     background-color: rgba(255, 255, 255, 0.384);
+    width: 100%;
     padding: 2px 8px;
     border-radius: 8px;
     margin: 5px 0;
@@ -329,10 +269,9 @@ main>section:first-child>.lista_produtos .produto .informacoes p {
     padding: 8px 16px;
     outline: none;
     border: none;
-    box-shadow: rgba(0, 0, 0, 0.521) 2px 2px 6px;
+    box-shadow: rgba(0, 0, 0, 0.212) 0px 0px 2px 2px;
     border-radius: 5px;
     background-color: transparent;
-    color: #e2e6e1e3;
     cursor: pointer;
     transition: 0.2s ease;
 }
@@ -342,6 +281,7 @@ main>section:first-child>.lista_produtos .produto .informacoes p {
     color: #080808e5;
     transform: scale(1.05);
 }
+
 .adm section {
     width: 100%;
     padding: 5px;
@@ -351,7 +291,7 @@ main>section:first-child>.lista_produtos .produto .informacoes p {
 }
 
 .adm section .container {
-    flex: 1 1 300px;
+    flex: 1 1 auto;
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -360,18 +300,20 @@ main>section:first-child>.lista_produtos .produto .informacoes p {
     border-radius: 10px;
     box-shadow: rgba(15, 15, 15, 0.329) 0px 0px 2px 2px;
 }
-.adm section > div:last-child {
-   flex : 2 1 100%;
+
+.adm section>div:last-child {
+    flex: 2 1 100%;
 }
+
 .tabela {
-   
-   height: 400px;
-   overflow: auto;
+
+    height: 400px;
+    overflow: auto;
 
 }
 
 .adm section .container form {
-    height: 100%;
+
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -399,20 +341,157 @@ select {
 }
 
 .adm section .container form button {
-    background-color: rgba(255, 255, 255, 0.644);
-    color: rgba(146, 8, 8, 0.801);
+    background-color: rgba(10, 59, 16, 0.856);
+    color: rgba(238, 236, 236, 0.801);
     font-size: 14px;
     width: 50%;
     margin: 0 auto;
     bottom: 100%;
-    padding: 5px 7px;
+    padding: 10px 16px;
     border-radius: 5px;
-    border: 1px solid rgba(255, 0, 0, 0.849);
+    border: none;
+
+
+    &:hover {
+
+        transform: scale(1.05);
+        transition: 0.3s;
+        cursor: pointer;
+
+    }
+
+}
+
+.produtos-table {
+    border-collapse: collapse;
+    width: 100%;
+    box-shadow: rgba(15, 15, 15, 0.329) 0px 0px 1px 1px;
+
+
+}
+
+
+.produtos-table th,
+.produtos-tabletd {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.produtos-table th {
+   
+    color: black;
+    text-align: center;
+}
+
+ .produtos-table tbody tr:hover {
+    cursor: pointer;
+   
+    border: 2px solid black;
+}
+
+
+.produtos-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+
+}
+.active {
+    background-color: rgba(11, 97, 11, 0.651);
+}
+
+
+.container .btn {
+    display: inline;
+    margin: 0 auto;
+
+}
+
+.container .btn button {
+    font-size: 16px;
+    width: 250px;
+    margin: 20px;
+    padding: 10px 16px;
+    border: 1px solid rgba(0, 0, 0, 0.425);
+    border-radius: 8px;
+    outline: none;
+}
+
+.container .btn button:hover {
+    transform: scale(1.1);
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+#alterar {
+    background-color: rgb(184, 157, 10);
+    color: rgba(255, 255, 255, 0.788);
+
+}
+
+#deletar {
+    background-color: rgb(148, 17, 17);
+    color: rgba(255, 255, 255, 0.788);
+}
+
+dialog {
+    width: 500px;
+    padding: 20px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: rgba(15, 15, 15, 0.329) 0px 0px 2px 2px;
+    margin: auto auto;
+}
+
+dialog::backdrop {
+    background-color: rgba(14, 82, 37, 0.575);
+}
+
+dialog .titulo {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+dialog form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+}
+
+dialog form h2 {
+    color: rgb(134, 106, 13);
+}
+
+dialog form input,
+select {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    border: 1px solid rgba(10, 61, 10, 0.5);
+    padding: 10px;
+}
+
+dialog form label {
+    font-weight: 600;
+    opacity: 0.8;
+}
+
+dialog form button {
+    background-color: rgba(22, 71, 12, 0.801);
+    color: rgba(255, 255, 255, 0.644);
+    font-size: 14px;
+    width: 50%;
+    margin: 0 auto;
+    bottom: 100%;
+    padding: 10px 16px;
+    border-radius: 5px;
+
     cursor: pointer;
 
     &:hover {
-        background-color: rgba(146, 8, 8, 0.801);
-        color: rgba(255, 255, 255, 0.644);
         transform: scale(1.02);
         transition: 0.3s;
 
@@ -420,68 +499,38 @@ select {
 
 }
 
-.produtos-table {
-  border-collapse: collapse; 
-  width: 100%; 
-  box-shadow: rgba(15, 15, 15, 0.329) 0px 0px 1px 1px;
-  
-           
-}
+dialog button {
 
+    font-size: 16px;
+    margin: 20px;
+    padding: 10px 16px;
+    border: none;
+    outline: none;
+    border-radius: 8px;
 
-.produtos-table  th,
-.produtos-tabletd {
-    border: 1px solid #ddd;  
-    padding: 8px;             
-    text-align: left;        
-}
-
-.produtos-table th {
-    background-color: #f2f2f2; 
-    color: black;   
-    text-align: center;           
-}
-.produtos-table tbody tr:hover {
-    cursor: pointer;
-    background-color: #8a858557; 
-}
-
-.produtos-table  tr:nth-child(even) {
-    background-color: #f9f9f9;
-    border: 1px solid black;
-}
-.produtos-table td {
-    border: 1px solid #ddd;  
-    padding: 10px;
+    &:hover {
+        transform: scale(1.05);
+        cursor: pointer;
+    }
 
 }
 
-.container .btn {
-   display: inline;
-   margin: 0 auto;
-   
-}
-.container .btn button {
-   font-size : 16px;
-   width: 250px;
-   margin: 20px;
-   padding: 10px 16px;
-   border: 1px solid rgba(0, 0, 0, 0.425);
-   outline: none;
-}
-.container .btn button:hover { 
-    transform: scale(1.1);
-    transition: 0.5s ease;
-    cursor: pointer;
-}
-.alterar { 
-   background-color: rgb(184, 157, 10);
-   color: rgba(255, 255, 255, 0.788);
-  
+
+.cancelar {
+    background-color: rgb(184, 157, 10);
+    color: rgba(255, 255, 255, 0.753);
 }
 
-.deletar { 
-   background-color: rgb(148, 17, 17);
-   color: rgba(255, 255, 255, 0.788);
+.excluir {
+    background-color: rgb(148, 17, 17);
+    color: rgba(255, 255, 255, 0.753);
 }
-
+.notificacao{
+    
+    margin: 10px 0px;
+    text-align: center;
+    color: rgba(184, 19, 19, 0.952);
+    letter-spacing: 2px;
+    font-size: 14px;
+    font-weight: bolder;
+}

@@ -1,110 +1,134 @@
 {
-    "produtos" : [
-        { 
-          "id": "ac124",
-          "titulo": "Produto",
-          "descricao": "Descrição do produto",
-          "preco": "19,99",
-          "quantidade": 15,
-          "imagem": "assets/img/camisa1.jpg"
-        },
-          { 
-          "id": "ac124",
-          "titulo": "Produto",
-          "descricao": "Descrição do produto",
-          "preco": "19,99",
-          "quantidade": 15,
-          "imagem": "assets/img/camisa1.jpg"
-        },
-          { 
-          "id": "ac124",
-          "titulo": "Produto",
-          "descricao": "Descrição do produto",
-          "preco": "19,99",
-          "quantidade": 15,
-          "imagem": "assets/img/camisa1.jpg"
-        },
-          { 
-          "id": "ac124",
-          "titulo": "Produto",
-          "descricao": "Descrição do produto",
-          "preco": "19,99",
-          "quantidade": 15,
-          "imagem": "assets/img/camisa1.jpg"
-        },
-          { 
-          "id": "ac124",
-          "titulo": "Produto",
-          "descricao": "Descrição do produto",
-          "preco": "19,99",
-          "quantidade": 15,
-          "imagem": "assets/img/camisa1.jpg"
-        },
-          { 
-          "id": "ac124",
-          "titulo": "Produto",
-          "descricao": "Descrição do produto",
-          "preco": "19,99",
-          "quantidade": 15,
-          "imagem": "assets/img/camisa1.jpg"
-        },
-          { 
-          "id": "ac124",
-          "titulo": "Produto",
-          "descricao": "Descrição do produto",
-          "preco": "19,99",
-          "quantidade": 15,
-          "imagem": "assets/img/camisa1.jpg"
-        },
-          { 
-          "id": "ac124",
-          "titulo": "Produto",
-          "descricao": "Descrição do produto",
-          "preco": "19,99",
-          "quantidade": 15,
-          "imagem": "assets/img/camisa1.jpg"
-        },
-          { 
-          "id": "ac124",
-          "titulo": "Produto",
-          "descricao": "Descrição do produto",
-          "preco": "19,99",
-          "quantidade": 15,
-          "imagem": "assets/img/camisa1.jpg"
-        },
-          { 
-          "id": "ac124",
-          "titulo": "Produto",
-          "descricao": "Descrição do produto",
-          "preco": "19,99",
-          "quantidade": 15,
-          "imagem": "assets/img/camisa1.jpg"
-        },  { 
-          "id": "ac124",
-          "titulo": "Produto",
-          "descricao": "Descrição do produto",
-          "preco": "19,99",
-          "quantidade": 15,
-          "imagem": "assets/img/camisa1.jpg"
-        },
-          { 
-          "id": "ac124",
-          "titulo": "Produto",
-          "descricao": "Descrição do produto",
-          "preco": "19,99",
-          "quantidade": 15,
-          "imagem": "assets/img/camisa1.jpg"
-        }
-
-    ],
-    "usuarios": [
-        {
-          "id": "ab124",
-          "nome": "Daniel Leo",
-          "login": "Danielleo000",
-          "email": "danielleo000@gmail.com",
-          "senha": "dan000",
-          "classe": "Administrador"
-        }
-    ]
+  "produtos": [
+    {
+      "titulo": "Camisa G",
+      "descricao": "Descrição do produto",
+      "detalhe": "Detalhe do produto",
+      "preco": 19.99,
+      "quantidade": 15,
+      "categoria": "camiseta",
+      "imagem": "assets/img/camisa1.jpg",
+      "id": "ac124"
+    },
+    {
+      "titulo": "Calça",
+      "descricao": "Descrição do produto",
+      "detalhe": "Detalhe do produto",
+      "preco": 19.99,
+      "quantidade": 15,
+       "categoria": "calca",
+      "imagem": "assets/img/camisa1.jpg",
+      "id": "ac924"
+    },
+    {
+      "titulo": "roupa intima",
+      "descricao": "Descrição do produto",
+      "detalhe": "Detalhe do produto",
+      "preco": 19.99,
+      "quantidade": 15,
+       "categoria": "roupaintima",
+      "imagem": "assets/img/camisa1.jpg",
+      "id": "ac124"
+    },
+    {
+      "titulo": "Tenis",
+      "descricao": "Descrição do produto",
+      "detalhe": "Detalhe do produto",
+      "preco": 19.99,
+      "quantidade": 15,
+       "categoria": "tenis",
+      "imagem": "assets/img/camisa1.jpg",
+      "id": "ac924"
+    },
+    {
+      "titulo": "Bermuda",
+      "descricao": "Descrição do produto",
+      "detalhe": "Detalhe do produto",
+      "preco": 19.99,
+      "quantidade": 15,
+       "categoria": "bermuda",
+      "imagem": "assets/img/camisa1.jpg",
+      "id": "ac124"
+    },
+    {
+      "titulo": "Moleton",
+      "descricao": "Descrição do produto",
+      "detalhe": "Detalhe do produto",
+      "preco": 19.99,
+      "quantidade": 15,
+       "categoria": "moleton",
+      "imagem": "assets/img/camisa1.jpg",
+      "id": "ac924"
+    },
+     {
+      "titulo": "Camisa G",
+      "descricao": "Descrição do produto",
+      "detalhe": "Detalhe do produto",
+      "preco": 19.99,
+      "quantidade": 15,
+      "categoria": "camiseta",
+      "imagem": "assets/img/camisa1.jpg",
+      "id": "ac124"
+    },
+    {
+      "titulo": "Calça",
+      "descricao": "Descrição do produto",
+      "detalhe": "Detalhe do produto",
+      "preco": 19.99,
+      "quantidade": 15,
+       "categoria": "calca",
+      "imagem": "assets/img/camisa1.jpg",
+      "id": "ac924"
+    },
+    {
+      "titulo": "roupa intima",
+      "descricao": "Descrição do produto",
+      "detalhe": "Detalhe do produto",
+      "preco": 19.99,
+      "quantidade": 15,
+       "categoria": "roupaintima",
+      "imagem": "assets/img/camisa1.jpg",
+      "id": "ac124"
+    },
+    {
+      "titulo": "Tenis",
+      "descricao": "Descrição do produto",
+      "detalhe": "Detalhe do produto",
+      "preco": 19.99,
+      "quantidade": 15,
+       "categoria": "tenis",
+      "imagem": "assets/img/camisa1.jpg",
+      "id": "ac924"
+    },
+    {
+      "titulo": "Bermuda",
+      "descricao": "Descrição do produto",
+      "detalhe": "Detalhe do produto",
+      "preco": 19.99,
+      "quantidade": 15,
+       "categoria": "bermuda",
+      "imagem": "assets/img/camisa1.jpg",
+      "id": "ac124"
+    },
+    {
+      "titulo": "Moleton",
+      "descricao": "Descrição do produto",
+      "detalhe": "Detalhe do produto",
+      "preco": 19.99,
+      "quantidade": 15,
+       "categoria": "moleton",
+      "imagem": "assets/img/camisa1.jpg",
+      "id": "ac924"
+    } 
+  ],
+  "usuarios": [
+    {
+      "id": "ab124",
+      "nome": "Daniel Leo",
+      "login": "Danielleo000",
+      "email": "danielleo000@gmail.com",
+      "senha": "dan000",
+      "classe": "Administrador"
+    }
+  ]
 }

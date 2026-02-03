@@ -11,7 +11,7 @@
 <body>
     <header>
         <div class="logo">
-            BRAZZ.
+            <a href="index.html">BRAZZ.</a>
         </div>
         <nav class="nav-links">
             <ul>
@@ -29,15 +29,16 @@
                     <input type="text" id="titulo">
                     <label for="descricao">Descrição do Produto: </label>
                     <input type="text" id="descricao">
-                    <label for="detalhes">Detalhes do Produto: </label>
-                    <input type="text" id="detalhes">
+                    <label for="detalhe">Detalhes do Produto: </label>
+                    <input type="text" id="detalhe">
                     <label for="preco">Adicionar Valor do Produto: </label>
                     <input type="number" id="preco">
                     <label for="quantidade">Adicionar quantidade de disponivel do produto: </label>
                     <input type="number" id="quantidade">
                     <label for="imagem">Adicionar Imagem do Produto: </label>
                     <input type="file" id="imagem">
-                    <button type="submit">Adicionar produto</button>
+                     <span class="notificacao" id="notCadastro"></span>
+                    <button type="submit" id="adicionar">Adicionar produto</button>
                 </form>
             </div>
             <div class="container">
@@ -45,22 +46,23 @@
             </div>
             <div class="container">
                 <h2>Listagem de produtos</h2>
-               <div class="tabela">
-                <table class="produtos-table">
-                    <thead>
-                        <tr>
-                            <th>Produto</th>
-                            <th>Preço</th>
-                            <th>Quantidade</th>
-                        </tr>
-                    </thead>
-                    <tbody id="produtos-list">
-                    </tbody>
-                </table>
+                <div class="tabela">
+                    <table class="produtos-table">
+                        <thead>
+                            <tr>
+                                <th>Produto</th>
+                                <th>Preço</th>
+                                <th>Quantidade</th>
+                            </tr>
+                        </thead>
+                        <tbody id="produtos-list">
+                        </tbody>
+                    </table>
                 </div>
+                 <span class="notificacao" id="notAlterarouDeletar"></span>
                 <div class="btn">
-                <button class="alterar">Alterar</button>
-                <button class="deletar">Excluir</button>
+                    <button class="abrir-modal" id="alterar" data-modal="modal-1">Alterar</button>
+                    <button class="abrir-modal" id="deletar" data-modal="modal-2">Excluir</button>
                 </div>
             </div>
         </section>
@@ -68,10 +70,46 @@
     <footer>
         <p>© 2024 Minha Loja. Todos os direitos reservados.</p>
     </footer>
+
+    <dialog id="modal-1">
+        <div class="titulo">
+            <h2>Alterar dados do produto produtos</h2><button class="fechar-modal">x</button>
+        </div>
+        <form id="alterar-produtos">
+            <label for="alterar-titulo">Alterar titulo: </label>
+            <input type="text" id="alterar-titulo"></input>
+            <label for="alterar-descricao">Alterar descrição do produto: </label>
+            <input type="text" id="alterar-descricao"></input>
+            <label for="alterar-detalhe"> Alterar detalhes do produto: </label>
+            <input type="text" id="alterar-detalhe"></input>
+            <label for="alterar-preco">Alterar Valor do produto: </label>
+            <input type="text" id="alterar-preco"></input>
+            <label for="alterar-quantidade">Alterar quantidade disponivel: </label>
+            <input type="number" id="alterar-quantidade"></input>
+            <label for="alterar-imagem">Alterar imagem do produto: </label>
+            <input type="file" id="alterar-imagem"></input>
+            <button type="submit">Enviar</button>
+            <button type="button" class="cancelar" id="cancelarAlteracao">Cancelar</button>
+        </form>
+
+    </dialog>
+    <dialog id="modal-2">
+        <div class="titulo">
+            <h2>Exclusão</h2><button class="fechar-modal">x</button>
+        </div>
+        <h3>Deseja Realmente deletar o produto permanentemente?</h3>
+        <div class="btn">
+            <button class="excluir" id="botaoExcluir">Excluir</button>
+            <button type="button" class="cancelar" id="cancelarExclusao">Cancelar</button>
+        </div>
+    </dialog>
     <script src="JS/app.js"></script>
-    <script>
-       window.onload(listarProdutosTabela());   
-    </script>
+     <script>
+        formulario.addEventListener('submit', event => {
+            event.preventDefault();
+            AdicionarProduto();
+        })
+     </script>
 </body>
 
 </html>

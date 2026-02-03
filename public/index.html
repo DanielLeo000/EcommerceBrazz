@@ -18,7 +18,6 @@
         <div class="logo">
             BRAZZ.
         </div>
-        <button class="menu-toggle"><span id="ToogleIcon">☰ </span></button>
         <nav class="nav-links">
             <ul>
                 <li>Carrinho</li>
@@ -28,24 +27,24 @@
         </nav>
     </header>
     <div class="admBtn">
-            <a href="areaAdm.html">Área do administrador</a>
-        </div>
-     <div class="search">
-        <input type="text" placeholder="Procurar produtos..."><button>Pesquisar</button></input>
+        <a href="areaAdm.html">Área do administrador</a>
     </div>
-    
+    <div class="search">
+        <form id="formularioPesquisa"><input type="text" placeholder="Procurar produtos..." id="searchBar"><button type="button" id="pesquisar">Pesquisar</button><button type="button" id="limpar">x</button></input></form>
+    </div>
+
     <aside>
-        <div class="categorias">
+        <div class="categorias" class="categorias">
             <ul>
-                <li>Tenis</li>
-                <li>Camiseta</li>
-                <li>Calça</li>
-                <li>Bermuda</li>
-                <li>Roupa intima</li>
-                <li>Moletons</li>
+                <li data-cat="tenis">Tenis</li>
+                <li data-cat="camiseta">Camiseta</li>
+                <li data-cat="calca">Calça</li>
+                <li data-cat="bermuda">Bermuda</li>
+                <li data-cat="roupaintima">Roupa intima</li>
+                <li data-cat="moleton">Moletons</li>
             </ul>
         </div>
-        
+
     </aside>
     <main>
         <section>
@@ -54,7 +53,7 @@
         </section>
     </main>
     <footer>
-        <p>© 2024 Minha Loja. Todos os direitos reservados.</p>
+        <p>©2024 BRAZZ. Todos os direitos reservados.</p>
     </footer>
 
     <script src="JS/app.js"></script>
